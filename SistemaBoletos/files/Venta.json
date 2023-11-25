@@ -1,0 +1,65 @@
+{
+    "controlador.TDA.lista.DynamicList": {
+        "header": {
+            "info": {
+                "@class": "modelo.Venta",
+                "id": 0,
+                "pasajero": {
+                    "nombre": "Geovanny",
+                    "apellido": "Romero",
+                    "DNI": 1104840499,
+                    "telefono": "0968785821"
+                },
+                "boleto": {
+                    "fechaSalida": "20\/12\/2023",
+                    "fechaCompra": "20\/12\/2023",
+                    "destino": "Cuenca",
+                    "origen": "Loja",
+                    "valor": 3.5
+                }
+            },
+            "next": {
+                "info": {
+                    "@class": "modelo.Venta",
+                    "id": 1,
+                    "pasajero": {
+                        "nombre": "Pedro",
+                        "apellido": "Gonzales",
+                        "DNI": 1104840499,
+                        "telefono": "0968785821"
+                    },
+                    "boleto": {
+                        "fechaSalida": "20\/12\/2023",
+                        "fechaCompra": "20\/12\/2023",
+                        "destino": "Cuenca",
+                        "origen": "Loja",
+                        "valor": 6
+                    }
+                },
+                "next": {
+                    "info": {
+                        "@class": "modelo.Venta",
+                        "id": 2,
+                        "pasajero": {
+                            "nombre": "Ismael",
+                            "apellido": "G",
+                            "DNI": 1104840499,
+                            "telefono": "0968785821"
+                        },
+                        "boleto": {
+                            "fechaSalida": "20\/12\/2024",
+                            "fechaCompra": "12\/12\/2024",
+                            "destino": "Quito",
+                            "origen": "Loja",
+                            "valor": 10
+                        }
+                    }
+                }
+            }
+        },
+        "last": {
+            "@reference": "..\/header\/next\/next"
+        },
+        "lenght": 3
+    }
+}
